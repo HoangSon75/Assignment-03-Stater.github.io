@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/font.css" />
+
+    <link rel="stylesheet" href="css/laptop.css" />
+    <link rel="stylesheet" href="css/tablet.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Assignment 03</title>
+  </head>
+  <body>
+    <div class="total-layout">
+      <div class="banner">
+        <img id="banner-img" src="images\Cover-Photo.jpg" alt="Banner image." />
+
+        <div class="intro">
+          <h1>Trương Hoàng Sơn</h1>
+          <span>Java Developer</span>
+        </div>
+      </div>
+
+      <nav class="nav-bar">
+        <a class="nav-bar-border-1" href="#"
+          ><i class="icon-user nav-bar-icon"></i>Thông tin</a
+        >
+        <a class="nav-bar-border-1 nav-bar-border-3" href="#"
+          ><i class="icon-doc-text-inv nav-bar-icon"></i>Lý lịch</a
+        >
+        <img id="avatar" src="images\profile-picture.jpg" alt="avatar" />
+
+        <div class="space"></div>
+
+        <a class="nav-bar-border-2 nav-bar-border-3" href="#"
+          ><i class="icon-mail-alt nav-bar-icon"></i>Chứng chỉ</a
+        >
+        <a class="nav-bar-border-2" href="#"
+          ><i class="icon-star-1 nav-bar-icon"></i>Dự án</a
+        >
+      </nav>
+
+      <section id="about" class="bg-grey">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm personal-info">
+              <h1 class="about-title">Mục tiêu nghề nghiệp</h1>
+              <p class="justify">
+                Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh
+                Nghiệp của FUNiX. Em mong muốn mình sẽ được làm việc với vị trí
+                <b>Java Developer</b>, có thể vận dụng những kiến thức đã được
+                trau dồi và không ngừng học hỏi để phát triển bản thân, cũng như
+                hoàn thành tốt nhất công việc được giao.
+              </p>
+            </div>
+            <div class="col-sm personal-info" style="background-color: #e8e8e8">
+              <h1 class="about-title">Thông tin cá nhân</h1>
+
+              <div id="email-input" onload="document.form.email.focus()">
+                <div class="mail">
+                  <form id="form" name="form" action="#">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Enter your email"
+                      onclick="select();"
+                    />
+                    <label id="email-label" for="email"
+                      >Hãy nhập "123@gmail.com" để xác thực</label
+                    >
+                    <input
+                      type="submit"
+                      value="Submit"
+                      class="submit"
+                      onclick="ValidateEmail(document.form.email)"
+                    />
+                  </form>
+                </div>
+              </div>
+
+              <div id="personal-information" class="hidden">
+                <ul class="mt-40 info">
+                  <li><strong>Giới tính</strong> : Nam</li>
+                  <li><strong>Ngày sinh</strong> : 07/05/1999</li>
+                  <li><strong>Điện thoại</strong> : (+84) 932113015</li>
+                  <li><strong>Email</strong> : sonthFX19812@FUNiX.edu.vn</li>
+                  <li>
+                    <strong>Địa chỉ</strong> : 17/24, khu phố 6, phường Linh
+                    Trung, Thủ Đức, Hồ Chí Minh
+                  </li>
+                  <li><strong>Website</strong> : https://abc.tech</li>
+                </ul>
+                <div class="social-icons">
+                  <a href="https://twitter.com/fx19812" target="_blank"
+                    ><i class="icon-twitter"></i
+                  ></a>
+                  <a
+                    href="https://www.facebook.com/create.son.1"
+                    target="_blank"
+                  >
+                    <i class="icon-facebook"></i
+                  ></a>
+                  <a href="https://myaccount.google.com/profile" target="_blank"
+                    ><i class="icon-gplus"></i
+                  ></a>
+                  <a
+                    href="https://www.linkedin.com/in/hoang-son-truong-8a8a51255/"
+                    target="_blank"
+                    ><i class="icon-linkedin"></i
+                  ></a>
+                </div>
+
+                <button class="close-btn-position">
+                  <i class="fa fa-arrow-left"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="summary">
+        <div
+          class="card px-4 pb-5 border border-2 border-custom-color-1"
+          onmouseover="showBtn(this)"
+          onmouseout="hideBtn(this)"
+        >
+          <div class="card-body justify">
+            <div class="d-flex justify-content-between py-4">
+              <div class="display-6 text-wrap">Kinh nghiệm</div>
+              <div class="display-6 ic-toolbox"></div>
+            </div>
+
+            <div class="more-information">
+              <div class="job-describe">
+                <div class="job-name">
+                  Đồ án môn học Cơ điện tử - Thiết kế, chế tạo hồ cá thông minh
+                  (tích hợp công nghệ Internet of Thing)
+                </div>
+                <div class="time-line">8/2020 - 2/2021</div>
+                <ul>
+                  <li>
+                    Viết chương trình điều khiển các chức năng như: cho cá ăn,
+                    lọc nước, điều chỉnh nhiệt độ nước...
+                  </li>
+                  <li>Thiết kế app điều khiển hồ cá nhờ vào App Inventor.</li>
+                  <li>Thiết kế và chế tạo các phần cứng khác.</li>
+                </ul>
+              </div>
+
+              <div class="job-describe">
+                <div class="job-name">
+                  Đề tài nghiên cứu khoa học - Tham gia thiết kế, chế tạo robot
+                  đánh cờ caro
+                </div>
+                <div class="time-line">9/2020 - 1/2021</div>
+                <ul>
+                  <li>Tham gia viết chương trình điều khiển cánh tay robot.</li>
+                  <li>Thiết kế và chế tạo các phần cứng khác.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="view-infor-btn rounded-pill hidden"
+            onclick="ShowHide(this)"
+          >
+            ▼ VIEW MORE
+          </button>
+        </div>
+
+        <div
+          class="card px-4 pb-5 border border-2 border-custom-color-1"
+          onmouseover="showBtn(this)"
+          onmouseout="hideBtn(this)"
+        >
+          <div class="card-body justify">
+            <div class="d-flex justify-content-between py-4">
+              <div class="display-6 text-wrap">Học vấn</div>
+              <div class="display-6 ic-pencil"></div>
+            </div>
+
+            <div class="more-information">
+              <div class="job-describe">
+                <div class="job-name">FUNiX</div>
+                <div class="time-line">10/2022 - <recent>hiện tại</recent></div>
+                <ul>
+                  <li>Chuyên ngành: Lập trình viên Java</li>
+                </ul>
+              </div>
+
+              <div class="job-describe">
+                <div class="job-name">
+                  Kỹ sư - Đại học Sư phạm Kỹ thuật Tp.HCM
+                </div>
+                <div class="time-line">8/2017 - 8/2022</div>
+                <ul>
+                  <li>Chuyên ngành: Công nghệ kỹ thuật Cơ điện tử</li>
+                  <li>GPA: 2.87 / 4</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="view-infor-btn rounded-pill hidden"
+            onclick="ShowHide(this)"
+          >
+            ▼ VIEW MORE
+          </button>
+        </div>
+
+        <div
+          class="card px-4 pb-5 border border-2 border-custom-color-1"
+          onmouseover="showBtn(this)"
+          onmouseout="hideBtn(this)"
+        >
+          <div class="card-body justify">
+            <div class="d-flex justify-content-between py-4">
+              <div class="display-6 text-wrap">Hoạt động</div>
+              <div class="display-6 ic-toolbox"></div>
+            </div>
+
+            <div class="more-information">
+              <div class="job-describe">
+                <div class="job-name">Hiến máu tình nguyện</div>
+                <div class="time-line">1/2022</div>
+                <ul>
+                  <li>
+                    Tham gia chương trình hiến máu tình nguyện tại trường.
+                  </li>
+                </ul>
+              </div>
+              <div class="job-describe">
+                <div class="job-name">Trung thu yêu thương</div>
+                <div class="time-line">9/2018</div>
+                <ul>
+                  <li>
+                    Tham gia chương trình Làm bánh trung thu - Góc sẻ chia.
+                  </li>
+                </ul>
+              </div>
+              <div class="job-describe">
+                <div class="job-name">Chủ nhật xanh</div>
+                <div class="time-line">2017 - 2021</div>
+                <ul>
+                  <li>
+                    Tham gia các hoạt động dọn dẹp, vệ sinh do nhà trường tổ
+                    chức.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="view-infor-btn rounded-pill hidden"
+            onclick="ShowHide(this)"
+          >
+            ▼ VIEW MORE
+          </button>
+        </div>
+
+        <div
+          class="card px-4 pb-5 border border-2 border-custom-color-1"
+          onmouseover="showBtn(this)"
+          onmouseout="hideBtn(this)"
+        >
+          <div class="card-body justify">
+            <div class="d-flex justify-content-between py-4">
+              <div class="display-6 text-wrap">Sở thích</div>
+              <div class="display-6 ic-telescope"></div>
+            </div>
+
+            <div class="more-information pb-4">
+              <div
+                class="row row-cols-4 row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-3"
+              >
+                <div class="col text-center" style="width: 92px">
+                  <div class="fas fa-tv tv-icon"></div>
+                  <div class="inline-text text-wrap">Watching Movies</div>
+                </div>
+
+                <div class="col text-center" style="width: 92px">
+                  <div class="fab fa-steam hobby-icon"></div>
+                  <div class="inline-text">Gaming</div>
+                </div>
+
+                <div class="col text-center" style="width: 92px">
+                  <div class="fas fa-book-reader hobby-icon"></div>
+                  <div class="inline-text text-wrap">Reading Books</div>
+                </div>
+
+                <div class="col text-center" style="width: 92px">
+                  <div class="fas fa-map-marked-alt hobby-icon"></div>
+                  <div class="inline-text">Traveling</div>
+                </div>
+
+                <div class="col text-center" style="width: 92px">
+                  <div class="fas fa-volleyball-ball hobby-icon"></div>
+                  <div class="inline-text">Sports</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="view-infor-btn rounded-pill hidden"
+            onclick="ShowHide(this)"
+          >
+            ▼ VIEW MORE
+          </button>
+        </div>
+
+        <div
+          class="card px-4 pb-5 border border-2 border-custom-color-1"
+          onmouseover="showBtn(this)"
+          onmouseout="hideBtn(this)"
+        >
+          <div class="card-body justify">
+            <div class="d-flex justify-content-between py-4">
+              <div class="display-6 text-wrap">Ngôn ngữ</div>
+              <div class="display-6 ic-mic"></div>
+            </div>
+            <div class="summary-detail more-information pb-4">
+              <div class="">
+                <p>Tiếng anh - TOEIC 805</p>
+                <div class="point-bar">
+                  <span class="point-bar-checked"></span>
+                  <span class="point-bar-checked"></span>
+                  <span class="point-bar-unchecked"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="view-infor-btn rounded-pill hidden"
+            onclick="ShowHide(this)"
+          >
+            ▼ VIEW MORE
+          </button>
+        </div>
+
+        <div
+          class="card px-4 pb-5 border border-2 border-custom-color-1"
+          onmouseover="showBtn(this)"
+          onmouseout="hideBtn(this)"
+        >
+          <div class="card-body justify">
+            <div class="d-flex justify-content-between py-4">
+              <div class="display-6 text-wrap">Kỹ năng</div>
+              <div class="display-6 ic-mic"></div>
+            </div>
+            <div class="summary-detail more-information pb-4">
+              <div>
+                <p>C++ - Fundamental</p>
+                <div class="point-bar">
+                  <span class="point-bar-checked"></span>
+                  <span class="point-bar-unchecked"></span>
+                  <span class="point-bar-unchecked"></span>
+                </div>
+              </div>
+
+              <div>
+                <p>JavaScript - Fundamental</p>
+                <div class="point-bar">
+                  <span class="point-bar-checked"></span>
+                  <span class="point-bar-unchecked"></span>
+                  <span class="point-bar-unchecked"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="view-infor-btn rounded-pill hidden"
+            onclick="ShowHide(this)"
+          >
+            ▼ VIEW MORE
+          </button>
+        </div>
+      </section>
+
+      <section class="bg-grey">
+        <div id="certificate">
+          <h1 class="certificate-title">Chứng chỉ - Giải thưởng</h1>
+
+          <div class="row g-5">
+            <div
+              class="col-sm-6 pb-lg-5 pb-md-4 border-bottom border-3 border-custom-color-2"
+            >
+              <div class="row border-sm-right border-custom-color-2">
+                <div class="col-lg-5">
+                  <img
+                    class="certificate-image"
+                    src="images\SolidWorks Degree.jpeg"
+                    alt="SolidWorks Degree"
+                  />
+                </div>
+                <div class="col-lg-7">
+                  <p class="certificate-name">Chứng chỉ SolidWorks</p>
+                  <ul>
+                    <li>
+                      Solidwork Associate Certificate issued by Dassault
+                      Systèmes
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 border-bottom border-3 border-custom-color-2">
+              <div class="row">
+                <div class="col-lg-5">
+                  <img
+                    class="certificate-image"
+                    src="images\Caro Robot.jpg"
+                    alt="Caro Robot"
+                  />
+                </div>
+                <div class="col-lg-7">
+                  <p class="certificate-name">Đề tài nghiên cứu khoa học</p>
+                  <ul>
+                    <li>Tham gia thiết kế, chế tạo robot đánh cờ caro</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-lg-5">
+                  <img
+                    class="certificate-image"
+                    src="images\Toeic Degree.jpg"
+                    alt="Toeic Degree"
+                  />
+                </div>
+                <div class="col-lg-7">
+                  <p class="certificate-name">Chứng chỉ TOEIC</p>
+                  <ul>
+                    <li>TOEIC Certificate with score 805 issued by IIG</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h1 class="project-title ms-md-5 ps-lg-5">Dự án</h1>
+        <div class="summary justify">
+          <div class="card border-dark">
+            <div class="card-body p-0">
+              <img
+                class="card-img-top"
+                src="images\project-No1.png"
+                atl="Project-No1.png"
+              />
+              <div class="project-name">CV CÁ NHÂN</div>
+              <div class="project-info">
+                <p><recent>2022</recent></p>
+                <div>
+                  <p class="icon-user-1 project-icon">FUNiX</p>
+                </div>
+                <div>
+                  <p class="icon-lamp project-icon">Developer</p>
+                </div>
+              </div>
+              <table>
+                <tr class="tr-border">
+                  <td class="td-title">Mô tả</td>
+                  <td class="td-padding-1">
+                    Trang Web CV cá nhân online. Gồm các thông tin cá nhân cũng
+                    như nghề nghiệp.
+                  </td>
+                </tr>
+
+                <tr class="tr-border">
+                  <td class="td-title">Nhiệm vụ</td>
+                  <td class="td-padding-1">
+                    - Phát triển code - Review code - Tối ưu code- Xử lý lỗi
+                  </td>
+                </tr>
+
+                <tr class="tr-border">
+                  <td>Công nghệ</td>
+                  <td class="td-padding-1">- HTML, CSS</td>
+                </tr>
+              </table>
+
+              <a href="./Personal--CV--Project.html" target="_blank"
+                >&#10148; Visit this project!!</a
+              >
+            </div>
+          </div>
+
+          <div class="card border-dark">
+            <div class="card-body p-0">
+              <img
+                class="card-img-top"
+                src="images\Smart-aquarium-fish.jpg"
+                alt="Smart Aquarium Fish.jpg"
+              />
+              <div class="project-name">HỒ CÁ THÔNG MINH</div>
+              <div class="project-info">
+                <p><recent>2020 - 2021</recent></p>
+                <div>
+                  <p class="icon-user-1 project-icon">HCMUTE</p>
+                </div>
+                <div>
+                  <p class="icon-lamp project-icon">Design and Developer</p>
+                </div>
+              </div>
+
+              <table>
+                <tr class="tr-border">
+                  <td class="td-title">Mô tả</td>
+                  <td class="td-padding-1">
+                    Hồ cá kết hợp công nghệ Internet of Things cho phép người
+                    dùng quản lý bể cá mọi nơi thông qua SmartPhone.
+                  </td>
+                </tr>
+
+                <tr class="tr-border">
+                  <td class="td-title">Nhiệm vụ</td>
+                  <td class="td-padding-1">
+                    <table>
+                      <tr>
+                        <td>- Thiết kế giao diện người dùng.</td>
+                      </tr>
+                      <tr>
+                        <td>- Vận hành và khắc phục lỗi cho sản phẩm.</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr class="tr-border">
+                  <td class="td-title">Công nghệ</td>
+                  <td class="td-padding-1">- Arduino, App Mit Inventor 2</td>
+                </tr>
+              </table>
+
+              <a href="./Smart--Fish--Tank-project.html" target="_blank"
+                >&#10148; Visit this project!!</a
+              >
+            </div>
+          </div>
+
+          <div class="card border-dark">
+            <div class="card-body p-0">
+              <img
+                class="card-img-top"
+                src="images\Tic-Tac-Toe-Robot.jpg"
+                alt="Tic-Tac-Toe Robot.jpg"
+              />
+              <div class="project-name">ROBOT ĐÁNH CỜ CARO</div>
+              <div class="project-info">
+                <p><recent>2020 - 2021</recent></p>
+                <div>
+                  <p class="icon-user-1 project-icon">FUNiX</p>
+                </div>
+                <div>
+                  <p class="icon-lamp project-icon">Developer</p>
+                </div>
+              </div>
+              <table>
+                <tr class="tr-border">
+                  <td class="td-title">Mô tả</td>
+                  <td class="td-padding-1">
+                    Cánh tay robot 6 bậc tự do, có các chế độ tự động hoặc điều
+                    khiển từ xa.
+                  </td>
+                </tr>
+
+                <tr class="tr-border">
+                  <td class="td-title">Nhiệm vụ</td>
+                  <td>
+                    <table>
+                      <tr>
+                        <td>
+                          - Tham gia viết chương trình điều khiển cánh tay
+                          robot.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>- Thiết kế và chế tạo các phần cứng khác.</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr class="tr-border">
+                  <td class="td-title">Công nghệ</td>
+                  <td class="td-padding-1">- Arduino.</td>
+                </tr>
+              </table>
+
+              <a href="./Tic--tac--toe--Robot.html" target="_blank"
+                >&#10148; Visit this project!!</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="footer" class="bg-grey">
+        <div class="row justify-content-center">
+          <div class="col-2 p-2">
+            <a
+              href="https://www.facebook.com/create.son.1"
+              target="_blank"
+              class="footer-link"
+              ><i class="icon-facebook-circled footer-icon"></i
+              ><span class="footer-text">Facebook</span></a
+            >
+          </div>
+          <div class="col-2 p-2">
+            <a
+              href="https://www.linkedin.com/onboarding/start/follow-recommendations/new/"
+              target="_blank"
+              class="footer-link"
+              ><i class="icon-linkedin-circled footer-icon"></i
+              ><span class="footer-text">Linkedin</span></a
+            >
+          </div>
+          <div class="col-2 p-2">
+            <a
+              href="https://github.com/HoangSon75"
+              target="_blank"
+              class="footer-link"
+              ><i class="icon-github-circled footer-icon"></i
+              ><span class="footer-text">GitHub</span></a
+            >
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>

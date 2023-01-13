@@ -1,0 +1,100 @@
+/*css for laptop display screen*/
+@media screen and (min-width: 992px) {
+  /*custom for job achieves and personal information*/
+  .personal-info {
+    padding: 15px 55px 40px 45px !important;
+    line-height: 25px;
+  }
+
+  #avatar {
+    max-width: 12%;
+    border-radius: 50%;
+    border: 8px solid white;
+    position: absolute;
+  }
+
+  /*styling navigation bar belows the banner picture*/
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    overflow: hidden;
+    font-size: 14px;
+  }
+
+  /*modify link button inside navigation bar*/
+  .nav-bar > a {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-bar-border-1 {
+    border-left: 1px solid #c0c0c0;
+  }
+
+  .nav-bar-border-2 {
+    border-right: 1px solid #c0c0c0;
+  }
+
+  /*space in the middle of NavBar*/
+  .space {
+    width: 12vw;
+  }
+
+  /*Code for display 6 content in Summary class add 3 of Project class.*/
+  .summary {
+    --gap: 2em;
+    --columns: 3;
+    max-width: 100%;
+    margin: 40px 80px;
+    display: column;
+    columns: var(--columns);
+    gap: var(--gap);
+  }
+
+  .footer-icon {
+    font-size: 1vw;
+    margin: 5px 0;
+  }
+
+  .footer-link {
+    font-size: 1vw;
+  }
+
+  /*Style for Project Chapter*/
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: dense;
+    max-width: 100%;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  /*layout for more information about this project*/
+  .project-detail {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    border-bottom: 1px solid rgb(211, 211, 211);
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+
+  /*layout for scope section's information*/
+  .scope-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  /*custom for number icon inside of Project Chapter*/
+  .number {
+    margin: auto;
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "assignment-03-stater",
+  "version": "1.0.0",
+  "description": "```\r Assignment 02 Stater\r ├─ css\r │  ├─ font.css\r │  └─ style.css\r ├─ fonts\r │  ├─ OpenSans-Italic-webfont.eot\r │  ├─ OpenSans-Italic-webfont.svg\r │  ├─ OpenSans-Italic-webfont.ttf\r │  ├─ OpenSans-Italic-webfont.woff\r │  ├─ OpenSans-Light-webfont.eot\r │  ├─ OpenSans-Light-webfont.svg\r │  ├─ OpenSans-Light-webfont.ttf\r │  ├─ OpenSans-Light-webfont.woff\r │  ├─ OpenSans-LightItalic-webfont.eot\r │  ├─ OpenSans-LightItalic-webfont.svg\r │  ├─ OpenSans-LightItalic-webfont.ttf\r │  ├─ OpenSans-LightItalic-webfont.woff\r │  ├─ OpenSans-Regular-webfont.eot\r │  ├─ OpenSans-Regular-webfont.svg\r │  ├─ OpenSans-Regular-webfont.ttf\r │  ├─ OpenSans-Regular-webfont.woff\r │  ├─ OpenSans-Semibold-webfont.eot\r │  ├─ OpenSans-Semibold-webfont.svg\r │  ├─ OpenSans-Semibold-webfont.ttf\r │  ├─ OpenSans-Semibold-webfont.woff\r │  ├─ et-line.eot\r │  ├─ et-line.svg\r │  ├─ et-line.ttf\r │  ├─ et-line.woff\r │  ├─ fontello.eot\r │  ├─ fontello.svg\r │  ├─ fontello.ttf\r │  └─ fontello.woff\r ├─ icon-list.html\r ├─ images\r │  ├─ Cert_PRF.png\r │  ├─ Cert_WEB.png\r │  ├─ banner.jpg\r │  ├─ default-avatar.webp\r │  ├─ funix-icon.png\r │  ├─ project_1.png\r │  ├─ project_2.png\r │  └─ project_3.png\r └─ index.html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "masonry-layout": "^4.2.2"
+  }
+}

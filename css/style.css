@@ -1,0 +1,569 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+.total-layout {
+  margin: 0 40px;
+  display: flex;
+  flex-direction: column;
+  font-family: arial, sans-serif, tahoma;
+  font-size: 12pt;
+}
+
+.banner {
+  position: relative;
+  justify-content: center;
+}
+
+#banner-img {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#avatar {
+  z-index: 2;
+}
+
+/*styling name and job on banner picture*/
+.intro {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: whitesmoke;
+  text-align: center;
+  line-height: 45px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+/*styling icon inside navigation bar*/
+.nav-bar-icon {
+  font-size: 10px;
+  margin-left: 5px;
+  color: #0079bc;
+}
+
+.nav-bar a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-bar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*styling mục tiêu nghề nghiệp*/
+.target-info {
+  display: flex;
+  color: #585858;
+}
+
+.about-title {
+  font-weight: 300;
+  font-size: 36px;
+  margin: 60px auto 30px 0;
+  color: #484848;
+}
+
+#personal-information {
+  position: relative;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.info {
+  list-style-type: none;
+  padding: 0;
+}
+
+/*styling icon inside "Thông tin cá nhân". */
+.social-icons {
+  display: flex;
+  margin: 30px auto auto 0px;
+  font-size: 14px;
+  gap: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.invalid-email {
+  font-weight: 300;
+  color: red;
+}
+
+#email {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#email:focus {
+  background-color: #fdf6f6;
+}
+
+.email-error {
+  border-color: red;
+  color: red;
+}
+
+#email-label {
+  font-size: 12px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.submit {
+  background-color: #0079bc;
+  color: #ddd;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #0079bc;
+}
+
+.submit {
+  transition-duration: 0.4s;
+}
+
+.submit:hover {
+  background-color: MidnightBlue;
+  color: white;
+}
+
+.submit:active {
+  background-color: #0079bc;
+  color: MidnightBlue;
+}
+
+.close-btn-position {
+  position: absolute;
+  left: 97.5%;
+  bottom: 130%;
+}
+
+/*Code for display 6 content in Summary class add 3 of Project class.*/
+.summary > * {
+  break-inside: avoid;
+  margin-bottom: var(--gap);
+}
+
+@supports (grid-template-rows: masonry) {
+  .summary {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-template-rows: masonry;
+    grid-auto-flow: dense;
+  }
+}
+
+/*Using for all of six sections inside "Thông tin nghề nghiệp". */
+.summary-title {
+  padding: 30px 10px 10px 10px;
+  max-height: 20px;
+  font-weight: 300;
+  font-size: 32px;
+  color: #484848;
+}
+
+/*
+Using for six sections inside "Thông tin nghề nghiệp" expect Hobbies section. 
+Is the icon at top right of the summary-list.
+*/
+.summary-icon {
+  color: #36454f;
+  font-size: 44px;
+  text-align: right;
+  padding: 20px 30px 30px 0;
+}
+
+/*Using for five sections inside "Thông tin nghề nghiệp" expect Hobbies section. */
+.job-name {
+  display: list-item;
+  margin-left: 10px;
+  font-weight: 600;
+  color: #484848;
+}
+
+/*Using for three sections inside "Thông tin nghề nghiệp": Kinh nghiệm, Học vấn và Hoạt động.*/
+.time-line {
+  font-style: italic;
+  font-size: 12px;
+  color: #8b8989;
+  margin: 8px 0 12px 12px;
+}
+
+/*styling the time "hiện tại". */
+recent {
+  padding: 3px 10px;
+  color: white;
+  background-color: #199cdb;
+  border-radius: 7px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/*Using for three sections inside "Thông tin nghề nghiệp": Kinh nghiệm, Học vấn và Hoạt động.*/
+.job-describe ul {
+  list-style-type: none;
+  margin-left: 10px;
+  padding-left: 0;
+}
+
+/*Using for three sections inside "Thông tin nghề nghiệp": Kinh nghiệm, Học vấn và Hoạt động.*/
+.job-describe li:before {
+  content: "- ";
+}
+
+/*Using for three sections inside "Thông tin nghề nghiệp": Kinh nghiệm, Học vấn và Hoạt động.*/
+.job-describe li {
+  margin-left: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.inline-text {
+  white-space: nowrap !important;
+}
+
+/*styling icon inside hobbies section.*/
+.hobby-icon {
+  font-size: 30px;
+  color: #199cdb;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #199cdb;
+  border-radius: 50%;
+}
+
+/*because tv-icon has different size, it need a different style if the result is same as those orthers.*/
+.tv-icon {
+  font-size: 25px;
+  color: #199cdb;
+  margin: 10px;
+  padding: 12px 9px;
+  border: 1px solid #199cdb;
+  border-radius: 50%;
+}
+
+/*syling the point-bar at Ngôn ngữ section and Kỹ năng section"*/
+.point-bar {
+  margin-left: 2px;
+}
+
+/*styling how many point does a skill or language have.*/
+.point-bar-checked {
+  background: #199cdb;
+  display: inline-block;
+  height: 4px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+/*styling how many point does a skill or language have.*/
+.point-bar-unchecked {
+  background-color: #8b8989;
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+/*using as a container for a skill or language*/
+.summary-detail {
+  grid-column: 1/3;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/*hide information when a Card-element is hovered but not click on view more button.*/
+.more-information {
+  display: none;
+}
+
+/*A effect when a Card-element is hovered.*/
+.summary-shadow-hide {
+  box-shadow: 2px -2px 3px -2px grey;
+}
+
+/*"VIEW MORE", "VIEW LESS" button have not been clicked yet.*/
+.view-infor-btn {
+  border: none;
+  padding: 5px 30px;
+  background-color: #f0e68c;
+  position: absolute;
+  bottom: 30px;
+  left: 10%;
+}
+
+.view-infor-btn:hover {
+  background-color: #fce300c2;
+  font-weight: 600;
+}
+
+.view-infor-btn:active {
+  background-color: #af9e07;
+  border: 1px solid #fce300c2;
+  font-weight: 700;
+}
+
+/*A effect for "VIEW MORE", "VIEW LESS" button when information is showed.*/
+.btn-position {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*styling the main container of "Chứng chỉ - Giải thưởng" section.*/
+#certificate {
+  margin: 60px 80px;
+}
+
+.certificate-title {
+  margin: 40px 10px;
+  font-weight: 300;
+  font-size: 36px;
+  color: #484848;
+}
+
+.certificate-image {
+  width: 100%;
+}
+
+.certificate-name {
+  font-weight: bold;
+  margin: 10px 10px 10px 0;
+}
+
+/*styling the line between two certificate container.*/
+.border-vertical {
+  content: "";
+  background-color: #d6c08d;
+  margin-bottom: 15px;
+}
+
+/*styling the line between two certificate container.*/
+.border-horizontal {
+  content: "";
+  background-color: #d6c08d;
+}
+
+/*main container of "Dự án" section."*/
+#project {
+  margin: 40px;
+}
+
+.project-title {
+  margin: 40px 10px;
+  font-weight: 300;
+  font-size: 36px;
+  color: #484848;
+}
+
+.project-name {
+  padding: 20px;
+  border-top: 1px solid #c0c0c0;
+}
+
+/*styling items inside a project.*/
+.project-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 0 0 0;
+  justify-content: space-around;
+  border-top: 1px solid #c0c0c0;
+}
+
+/*styling icons inside project-section*/
+.project-icon {
+  font-size: 10px;
+  margin-left: 0px;
+  padding: 0px;
+}
+
+/*modify border*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/*create a line between two rows in the table.*/
+.tr-border {
+  border-top: 1px solid #c0c0c0;
+  line-height: 20px;
+  height: 60px;
+}
+
+.td-padding-1 {
+  padding: 10px;
+}
+
+.td-title {
+  padding: 10px;
+}
+
+td {
+  vertical-align: top;
+  padding: 5px;
+}
+
+.card-body a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+/*styling list inside the footer section*/
+#footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*styling list inside the footer section*/
+#footer li {
+  list-style: none;
+  margin: 20px 30px;
+}
+
+/*styling icon inside the footer section*/
+#footer a:link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd;
+  color: black;
+  text-decoration: none;
+}
+
+.footer-icon {
+  color: #0079bc;
+}
+
+/*CSS for project chapter*/
+.project-layout {
+  background-color: blue;
+  height: 100%;
+}
+
+/*content of information*/
+.project-grid {
+  max-width: 100%;
+  padding: 20px;
+}
+
+/*content of information*/
+.project-section {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(240, 255, 255);
+  margin-left: 15px;
+  padding: 15px;
+}
+
+/*titile of information*/
+.project-group {
+  color: blue;
+  border-bottom: 2px solid rgb(192, 192, 192);
+  font-weight: 600;
+  font-size: 32px;
+  padding: 20px 0;
+}
+
+/*expand content for more space*/
+.item-expand-1 {
+  grid-column: 1/3;
+}
+
+/*expand content for more space*/
+.item-expand-2 {
+  grid-row: 1/3;
+  grid-column: 4/5;
+}
+
+/*layout for more information about this project*/
+.project-detail {
+  border-bottom: 1px solid rgb(211, 211, 211);
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+/*layout for primary section's information*/
+.project-primary {
+  display: flex;
+  flex-direction: row;
+}
+
+/*layout for scope section's information*/
+.scope-column {
+  margin: 10px 20px;
+}
+
+/*layout for scope section's information*/
+.scope-row {
+  display: flex;
+  flex-direction: column;
+}
+
+/*custom for icon inside of Project Chapter*/
+.custom-icon {
+  margin: auto;
+  padding-bottom: 20px;
+  font-size: 32px;
+}
+
+/*custom for icon inside of Project Chapter*/
+.question-icon {
+  margin: auto;
+  padding-bottom: 0;
+  font-size: 32px;
+}
+
+/*custom for number icon inside of Project Chapter*/
+.number {
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  background: #fff;
+  border: 3px solid #000;
+  text-align: center;
+  color: #000;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+/*custom for text inside of Project Chapter*/
+.text-custom {
+  padding: 10px 0 10px 10px;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+/*custom for text inside of Project Chapter*/
+.text-custom h4 {
+  margin-bottom: 30px;
+}
+
+/*custom for text inside of Project Chapter*/
+.text-custom p {
+  margin: 0;
+}

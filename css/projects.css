@@ -1,0 +1,26 @@
+.bg-color {
+  background-color: rgb(255, 255, 255);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 100%;
+}
+
+.item-expand {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.project-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-detail {
+  display: grid;
+  grid-template-columns: 10% 90%;
+}

@@ -1,0 +1,99 @@
+@media screen and (max-width: 992px) {
+  .personal-info {
+    padding: 15px 40px 40px 30px !important;
+    line-height: 25px;
+  }
+
+  #avatar {
+    display: none;
+  }
+
+  /*styling navigation bar belows the banner picture*/
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    overflow: hidden;
+    font-size: 14px;
+  }
+
+  /*modify link button inside navigation bar*/
+  .nav-bar > a {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-bar-border-1 {
+    border-left: 1px solid #c0c0c0;
+  }
+
+  .nav-bar-border-2 {
+    border-right: 1px solid #c0c0c0;
+  }
+
+  .nav-bar-border-3 {
+    border-right: 1px solid #c0c0c0;
+    border-left: 1px solid #c0c0c0;
+  }
+
+  .space {
+    width: 6vw;
+  }
+
+  .footer-icon {
+    font-size: 1vw;
+    margin: 5px;
+  }
+
+  .footer-link {
+    font-size: 1vw;
+  }
+
+  /*Code for display 6 content in Summary class add 3 of Project class.*/
+  .summary {
+    --gap: 2em;
+    --columns: 2;
+    max-width: 100%;
+    margin: 40px 60px;
+    display: column;
+    columns: var(--columns);
+    gap: var(--gap);
+  }
+
+  /*Style for Project Chapter*/
+  .project-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*layout for more information about this project*/
+  .project-detail {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*layout for more information about this project*/
+  .project-section {
+    margin-bottom: 20px;
+  }
+
+  /**/
+  .project-group {
+    margin: 10px;
+  }
+
+  /*layout for scope section's information*/
+  .scope-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*custom for number icon inside of Project Chapter*/
+  .number {
+    margin: auto 15px;
+  }
+}
